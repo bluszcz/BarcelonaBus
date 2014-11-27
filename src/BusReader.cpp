@@ -14,7 +14,6 @@
     return msg;
  }
 
-
  void BusReader::handleNetworkData(QNetworkReply *networkReply)
  {
      QUrl url = networkReply->url();
@@ -22,15 +21,8 @@
 
          QString response = QString::fromLatin1(networkReply->readAll());
          qDebug() << response;
-
-
-
-
          response = response.replace("bgcolor=\"#99CCFF\"","");
-
-
          setHtml(response);
-
      }
 
      networkReply->deleteLater();
@@ -50,5 +42,3 @@ void BusReader::setHtml(const QString &newHtml)
 void BusReader::refresh() {
     qDebug() << "Called the C++ slot";
 }
-
-
