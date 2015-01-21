@@ -3,7 +3,7 @@ Barcelona Bus
 
 Barcelona Bus - Jolla SailfishOS application showing earliest bus after providing a station.
 
-This app is NOT using official API but making direct HTTP requests. 
+This app is NOT using official API but making direct HTTP requests. It is not in any usable state - just experiment with a SailfishOS SDK. Feel free to investigate sources.
 
 ##### Screenshots
 
